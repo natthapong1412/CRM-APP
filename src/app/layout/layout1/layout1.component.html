@@ -33,9 +33,16 @@
         </a> -->
         <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active">
           <button mat-icon-button>
-            <mat-icon class="icon-dashboard">dashboard</mat-icon>
+            <mat-icon class="icon-dashboard"></mat-icon>
           </button>
         </a>
+
+        <a [routerLink]="['/line']" routerLinkActive="router-link-active">
+          <button mat-icon-button>
+            <mat-icon class="chat">chat</mat-icon>
+          </button>
+        </a>
+
       </div>
       <div fxFlex="0 1 auto" fxLayout="column" fxLayoutAlign="end center">
         <a [routerLink]="['/settings']" routerLinkActive="router-link-active">

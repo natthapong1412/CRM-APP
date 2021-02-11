@@ -113,15 +113,27 @@ const routes: Routes = [
     },
     canActivate: [AuthGuard]
   },
+
   // {
   //   path: 'settings',
   //   loadChildren: () => import('./modules/settings/settings.module').then(m => m.SettingsModule),
   //   canActivate: [AuthGuard]
   // },
+
+  {
+    path: 'line',
+    loadChildren: () => import('./modules/line/line.module').then(m => m.LineModule)
+  },
+  {
+    path: 'note',
+    loadChildren: () => import('./modules/generic-master/generic-master.module').then(m => m.GenericMasterModule),
+    data: { layouts: ['notes'] }
+  },
   {
     path: '**',
     redirectTo: 'deals'
-  }
+  },
+
 ];
 
 @NgModule({

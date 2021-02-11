@@ -1,0 +1,200 @@
+<mat-drawer-container>
+  <mat-drawer class="left-panel" mode="side" opened="true" position="start">
+    <mat-toolbar class="toolbar">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>All</span>
+      <mat-form-field class="searchcontent" appearance="outline">
+        <mat-icon matSuffix>search</mat-icon>
+        <input matInput placeholder="ค้นหา">
+      </mat-form-field>
+    </mat-toolbar>
+
+    <hr>
+    <div *ngFor="let item of data" class="NameChat" fxLayout="column" (click)="toggle()">
+      <div class="date" fxFlexAlign="end">{{item.chatDate}}</div>
+      <div fxLayout="row" fxLayoutAlign="start" fxFlex="100">
+        <div fxLayout="row" fxLayoutAlign="center" fxFlex="20">
+          <img class="app-logo"
+            src={{item.contactImg}}>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="80">
+          <div>
+            <strong>
+              {{item.contactName}}
+            </strong>
+          </div>
+          <div class="chat" fxFlexAlign="start">{{item.chat}}</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- <div fxLayout="column">
+      <div fxLayout="row" fxLayoutAlign="start start" fxFlex="100">
+        <div fxLayout="row" fxLayoutAlign="start start" fxFlex="20">
+          <mat-icon>list</mat-icon>
+          <span class="all">ALL</span>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="end" fxFlex="80">
+        </div>
+      </div>
+    </div> -->
+
+  </mat-drawer>
+  <mat-drawer-content class="content-panel">
+    <mat-toolbar class="toolbar-content">
+      <div fxFill fxLayout="row" fxLayoutAlign="start center">
+        <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start">
+
+          <img class="app-logo"
+            src="https://i.pinimg.com/originals/a9/56/a3/a956a3561929fdb8d3a9679321318aad.jpg" alt="">
+          &nbsp;&nbsp;
+          <span class="chat-picture">Kermit the fog</span>
+
+        </div>
+        <!-- <div fxLayoutAlign="end"> -->
+          <button mat-raised-button class="Follow-Up">
+            <mat-icon class="chat-icon">chat</mat-icon>Follow Up
+          </button>
+          <button mat-raised-button class="Resolve">
+            <mat-icon class="chat_read-icon">mark_chat_read</mat-icon>Resolve
+          </button>
+          <mat-form-field class="searchbox" appearance="outline">
+            <mat-icon matSuffix>search</mat-icon>
+            <input matInput placeholder="ค้นหา">
+          </mat-form-field>
+
+        </div>
+        <div class="" fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
+        <!-- </div> -->
+      </div>
+    </mat-toolbar>
+
+
+    <div fxLayout="column" style="padding: 10px; overflow-x: scroll !important;">
+      <div fxLayout="row">
+          <div fxLayoutAlign="start center">
+              <div>
+                  <img class="leftchat-img"
+                      src="https://i.pinimg.com/originals/a9/56/a3/a956a3561929fdb8d3a9679321318aad.jpg">
+              </div>
+          </div>
+          <div>
+              <p class="left-chat">
+                  enter your text
+              </p>
+          </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end">
+          <div>
+              <p class="right-chat">
+                enter your text
+              </p>
+          </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end">
+          <div>
+              <p class="right-chat">
+                enter your text
+              </p>
+          </div>
+      </div>
+      <div fxLayout="row">
+          <div fxLayoutAlign="start center">
+              <div>
+                  <img class="leftchat-img"
+                      src="https://i.pinimg.com/originals/a9/56/a3/a956a3561929fdb8d3a9679321318aad.jpg">
+              </div>
+          </div>
+          <div>
+              <p class="left-chat">
+                enter your text
+              </p>
+          </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end">
+          <div>
+              <p class="right-chat">
+                enter your text
+              </p>
+          </div>
+      </div>
+      <div fxLayout="row">
+          <div fxLayoutAlign="start center">
+              <div>
+                  <img class="leftchat-img"
+                      src="https://i.pinimg.com/originals/a9/56/a3/a956a3561929fdb8d3a9679321318aad.jpg">
+              </div>
+          </div>
+          <div>
+              <p class="left-chat">
+                enter your text
+              </p>
+          </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end">
+          <div>
+              <p class="right-chat">
+                enter your text
+              </p>
+          </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end">
+        <div>
+            <p class="right-chat">
+              enter your text
+            </p>
+        </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="end">
+      <div>
+          <p class="right-chat">
+            enter your text
+          </p>
+      </div>
+  </div>
+  </div>
+
+  <footer class="toolbar-send" style="margin-top: 2px;">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <mat-form-field class="send" appearance="outline" fxFlex>
+        <mat-label>Enter your massage here</mat-label>
+        <input matInput placeholder="">
+        <mat-icon matSuffix>send</mat-icon>
+      </mat-form-field>
+    </div>
+  </footer>
+
+
+  </mat-drawer-content>
+  <mat-drawer #drawer class="right-panel" mode="side" position="end" opened="true" fxLayout="column"
+    fxLayoutAlign="start center">
+    <mat-toolbar>
+      <button mat-icon-button>
+        <mat-icon>home</mat-icon><strong>ข้อมูลผู้ติดต่อ</strong>
+      </button>
+    </mat-toolbar>
+
+    <button type="button" mat-icon-button (click)="toggle()">
+      <mat-icon>keyboard_tab</mat-icon>
+    </button>
+    <div fxFlexAlign="center">
+      <img class="profile-picture"
+        src="https://i.pinimg.com/originals/a9/56/a3/a956a3561929fdb8d3a9679321318aad.jpg" alt="">
+    </div>
+    <strong class="name-profile1">Kermit the fog
+      <mat-icon clase="edit-icon">edit</mat-icon>
+    </strong>
+    <hr>
+    <strong class="note">Note</strong>
+    <button class="add-button" mat-icon-button color="primary" [routerLink]="['/note']" routerLinkActive="router-link-active">
+      <mat-icon>add</mat-icon>
+    </button>
+
+
+  </mat-drawer>
+</mat-drawer-container>

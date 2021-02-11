@@ -1,0 +1,166 @@
+.mat-drawer-container {
+  width: 100%;
+  min-height: calc(100vh - 105px);
+
+  .left-panel {
+    padding: 10px;
+    width: 20%;
+  }
+
+  .right-panel {
+    width: 30%;
+  }
+
+  .content-panel {
+    width: auto;
+    height: 83vh;
+  }
+  .all {
+    margin-top: 3px;
+  }
+
+  .search-tollbar {
+    margin-top: 3px;
+    margin-left: 50px;
+    width: 130px;
+    height: 30px;
+  }
+
+  .searchcontent {
+    font-size: 10px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .toolbar {
+    height: 40px;
+  }
+
+  .app-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border-color: black;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .chat {
+    font-size: 14px;
+  }
+
+  .chat-picture {
+    font-size: 15px;
+    margin-top: 8px;
+  }
+
+  .Follow-Up {
+    margin-left: 120px;
+  }
+
+  .chat-icon {
+    margin-right: 10px;
+  }
+
+  .Resolve {
+    left: 25px;
+  }
+
+  .chat_read-icon {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  .Search {
+    margin-left: 50px;
+    width: 110px;
+  }
+
+  .chat_search-icon {
+    margin-right: 5px;
+  }
+
+  .home-icon {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  .searchbox {
+    font-size: 10px;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+
+  .profile-picture{
+    margin-left: 90px;
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .name-profile1{
+    margin-top: 100px;
+    margin-left: 160px;
+  }
+
+  .edit-icon {
+    font-size: 5px;
+  }
+
+  .right-chat {
+    padding: 10px;
+    max-width: 50vh;
+    background-color: #4CBB17;
+    word-wrap: break-word !important;
+    border-radius: 15px;
+    height: auto;
+  }
+
+  .left-chat {
+    padding: 10px;
+    max-width: 50vh;
+    background-color: darkgray;
+    word-wrap: break-word !important;
+    border-radius: 15px;
+    height: auto;
+    margin-left: 5px;
+  }
+
+  .note {
+    margin-left: 10px;
+  }
+
+  .add-button {
+    margin-left: 350px;
+  }
+
+  .leftchat-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .toolbar-content {
+    position:sticky;
+    top:0 !important;
+  }
+
+  .toolbar-send {
+    position: sticky;
+    bottom: 0 !important;
+    height: auto;
+    font-size: 15px;
+    background-color: white;
+  }
+
+  .send {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
