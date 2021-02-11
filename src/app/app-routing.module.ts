@@ -114,12 +114,6 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
 
-  // {
-  //   path: 'settings',
-  //   loadChildren: () => import('./modules/settings/settings.module').then(m => m.SettingsModule),
-  //   canActivate: [AuthGuard]
-  // },
-
   {
     path: 'line',
     loadChildren: () => import('./modules/line/line.module').then(m => m.LineModule)
